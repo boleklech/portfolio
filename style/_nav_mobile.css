@@ -1,0 +1,40 @@
+.hidden {
+  visibility: hidden;
+}
+
+.active {
+  visibility: visible;
+  transition: visibility 1s, opacity 3s;
+  opacity: .9;
+  position: fixed;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 3em;
+  background-color: #0c192b;
+  width: 100%;
+  z-index: 1000;
+}
+
+.active .mobile-menu-content {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active .mobile-menu-content .respons {
+  padding: 10px 20px 0px 20px;
+}
+
+.active .mobile-menu-content p {
+  font-size: 0.5em;
+  padding-bottom: 10px;
+}
+
+.active .mobile-menu-content .fa-bars {
+  color: #ff0000;
+}
+
+.active .mobile-menu-content .barsTitle {
+  color: #ff0000;
+}

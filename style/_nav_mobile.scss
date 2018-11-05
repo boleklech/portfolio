@@ -1,0 +1,100 @@
+
+	.mobile-menu-content{
+		
+		
+
+	 a{
+			position: relative;
+			display: block;
+			cursor: pointer;
+			width: 100%;
+			height: 100%;
+			font-size: 1.5em;
+			text-decoration: none;
+			text-align: center;
+			padding: 40px 10px 0 10px;
+			color: #fff;
+			box-sizing: border-box;
+
+			@include tablet{
+				padding: 0 50px;
+			}
+
+
+		@include desktop{
+			padding: 0 50px;
+		}
+			.respons{
+				position: absolute;
+				font-size: 2em;
+				top:10px;
+				left: 50%;
+				transform: translate(-50%);
+				color: #fff;
+				
+				@include tablet{
+					top:20px;
+				}
+
+				@include desktop{
+					top:20px;
+				}
+
+			}
+
+		}
+	}
+
+	
+		
+		.mobile-menu {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	    width: 100%;
+	    height: 70px;
+	    background: rgba(9, 108, 245, 0.95);
+	    position: fixed;
+	    bottom: 0px;
+	    left: 0px;
+	    z-index: 99;
+	    box-sizing: border-box;
+
+	  @include tablet{
+	  		background: none;
+			position: absolute;
+			top: 140px;
+			max-width: 1024px;
+			margin: 0 auto;
+			padding-top: 10px;
+			
+	  }
+
+	   
+
+		@include desktop{
+			background: none;
+			position: absolute;
+			top: 140px;
+			width: 1024px;
+			margin: 0 auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+	 
+	 }
+
+	 .active-nav{
+	 		height: 70px;
+			position: fixed;
+			max-width: 1024px;
+			 left: 50%;
+    		top: 30px;
+   		 	transform: translate(-50%, -50%);	
+   		 	background: rgba(9, 108, 245, 0.95);
+   		 	z-index: 999;
+		}
+
+	 
+
+

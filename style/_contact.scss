@@ -1,0 +1,198 @@
+.contact{
+	margin-bottom: 100px;
+	margin-top: 20px;
+	color: #9e9898;
+	border-top: 2px solid rgba(9, 108, 245, 0.95);
+
+
+	@include tablet{
+		
+	}
+	@include desktop{
+		min-width: 1024px;
+		width: 100%;
+		margin: 0 auto; 
+		padding-bottom: 20px;
+	}
+
+	h3{
+		font-size: 2.2rem;
+		padding-bottom: 20px;
+		padding-top: 30px;
+	}
+
+	p{
+		font-size: 1.8rem;
+		padding: 5px 0px;
+	
+
+		.fa{
+			margin-right: 15px;
+
+		}
+
+		.fa-facebook{
+			margin-right: 25px;
+		}
+
+	}
+
+	
+
+	.form{
+		overflow: hidden;
+		@include tablet{
+			width: 50%;
+		}
+
+
+		@include desktop{
+			width: 40%;
+		}
+
+		h2{
+		font-size: 2.2rem;
+		margin-top: 10px;
+		padding: 10px 0 0 0;
+		}
+
+		
+
+		.form-input {
+		  min-width: 200px;
+		  position: relative;
+		  margin-top: 40px;
+
+		   &.not-empty-input{
+		   
+		     .label{
+		     	left: -4px;
+		      top: -28px;
+		      color: rgba(9, 108, 245, 0.95); 
+		      transform: scale(0.85);
+		     }
+		     input,.textarea{
+		     	border-bottom: 1px solid rgba(9, 108, 245, 0.95);
+		     }
+		  }
+
+
+
+		  input {
+		  	color: rgba(9, 108, 245, 0.95);
+		  	color: #000;
+		    border: none;
+		    border-bottom: 1px solid #000;
+		    outline: none;
+		    font-size: 1.8em;
+
+		    &:focus{
+		    	border-bottom:1px solid rgba(9, 108, 245, 0.95);
+		    }
+
+
+
+		    + label {
+		      font-size: 2rem;
+		      position: absolute;
+		      left: 0;
+		      top: -7px;
+		      transition: .5s all;
+		    }
+
+		    &:focus {
+		      + .label {
+		      	left: -4px;
+		        top: -28px;
+		        color: #096cf5;
+		        transform: scale(.85);
+		      }
+		    }
+
+		  }
+
+		}
+
+		.button{
+			margin-top: 10px;
+			background: none;
+			border: none;
+			background-color:#8bb0e2;
+			font-size: 2em;
+			padding:10px 20px;
+			float: right;
+			overflow: hidden;
+			color: #fff;
+
+		}
+
+		.active-button{
+			background-color: rgba(9, 108, 245, 0.95);
+		}
+
+
+	
+		.form-textarea{
+			margin-top: 40px;
+			display: flex;
+			flex-direction: column;
+			position: relative;
+
+				.textarea{
+					border:none;
+					width: 212px;
+					outline: none;
+					border-bottom: 1px solid  #000;
+					font-size: 2rem;
+					color: #202124;
+
+						&::placeholder{
+							color:#202124;
+						}
+
+
+					&:focus{
+						border-bottom:1px solid #096cf5;
+					}
+
+					}
+
+				
+
+						 label{
+							visibility: hidden;
+							 font-size: 1.8rem;
+							 transform: scale(.85);
+						      position: absolute;
+						      left: -10px;
+						      top: -28px;
+						      color: #096cf5;
+						}
+
+
+						&:focus{
+						
+							+ label	{
+							
+							color: #096cf5;
+					        transform: scale(.85);
+					    	}
+						}
+
+						.active{
+							visibility: visible;
+							transition: .5s all;
+							transform: scale(0.85);
+						}
+						.hidden{
+							display: none;
+						}
+
+
+
+	    }
+
+
+}
+
+}

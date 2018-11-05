@@ -1,0 +1,56 @@
+/*resize*/
+
+$tablet: 768px;
+$desktop: 1024px;
+
+@mixin tablet() {
+	@media (min-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin desktop() {
+	@media (min-width: $desktop) {
+		@content;
+	}
+}
+
+
+
+/*animation for caruzel mobile*/
+
+@keyframes caruzel_1_mobile{
+			0%{	
+				transform:  translateX(10%)
+
+				
+			}
+			50%{
+					transform: translateX(130%) 
+					translateY(10%) 
+					scale(1);
+			}
+
+			100%{
+					transform: scale(1);
+			}
+
+		}
+
+		@keyframes caruzel_2_mobile{
+			0%{	
+				transform:  translateX(0)
+
+				
+			}
+			50%{
+					transform: translateX(-130%) 
+					translateY(-10%) 
+					scale(1);
+			}
+
+			100%{
+					transform: scale(1);
+			}
+
+		}

@@ -1,0 +1,22 @@
+			
+	footer{
+		text-align: center;
+		margin-top:20px;
+		margin-bottom: 20px;
+		@include tablet{
+			}
+	
+
+
+		.footer{
+			
+			font-size: 1.5em;
+			color: rgba(9, 108, 245, 0.95);
+			border-top: 2px solid;
+			padding-top: 10px;
+
+			@include tablet {
+			padding-bottom: 5px;
+			}
+		}
+	}
